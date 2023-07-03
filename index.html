@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Random Stuff Generator</title>
+    <script>
+        function generateRandomStuff() {
+            var randomStuff = [
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+                "Suspendisse tincidunt mauris ac nulla convallis, et tincidunt neque fringilla.",
+                "Quisque a augue nec felis posuere consequat a in arcu.",
+                "Vestibulum tincidunt sapien sed tellus tempor, eget feugiat metus tristique.",
+                "Maecenas malesuada tellus et eros interdum, ac gravida lorem aliquam.",
+                "Nam eget nisl volutpat, pretium lectus a, cursus nulla.",
+                "Duis vulputate ligula auctor, vestibulum massa vel, finibus justo.",
+                "Praesent id felis dignissim, auctor justo non, malesuada nunc.",
+                "Curabitur eu neque cursus, ultrices odio eu, interdum arcu."
+            ];
+            
+            var randomIndex = Math.floor(Math.random() * randomStuff.length);
+            var randomText = randomStuff[randomIndex];
+            
+            document.getElementById("random-content").innerText = randomText;
+        }
+    </script>
+</head>
+<body>
+    <h1>Random Stuff Generator</h1>
+    <button onclick="generateRandomStuff()">Generate Random Stuff</button>
+    <p id="random-content"></p>
+</body>
+</html>
